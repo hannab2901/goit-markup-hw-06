@@ -758,9 +758,39 @@ body {
 }
 .modal-nav textarea {
   resize: none;
+  width: 448px;
+  padding: 12px 16px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal-nav label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .modal-icon {
   height: 12px;
   width: 12px;
+  position: absolute;
+
+  left: 15px;
+}
+.modal-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
