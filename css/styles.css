@@ -699,6 +699,7 @@ body {
 .modal {
   width: 528px;
   min-height: 581px;
+  padding: 40px;
 
   position: fixed;
   top: 50%;
@@ -736,4 +737,24 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+}
+.modal-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 0.87;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal-nav textarea {
+  resize: none;
+}
+
+.modal-icon {
+  height: 12px;
+  width: 12px;
 }
