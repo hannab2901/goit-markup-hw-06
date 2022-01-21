@@ -815,10 +815,14 @@ body {
 
   margin-bottom: 10px;
 }
-.modal-input:focus {
-  border: var(--accent-color);
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-.modal-input:focus + .modal-icon {
+.modal-input:focus,
+.modal-input:hover + .modal-icon {
   fill: var(--accent-color);
 }
 .modal-send {
