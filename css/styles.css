@@ -796,6 +796,10 @@ body {
   top: 32px;
   left: 15px;
   fill: #000000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-label {
   padding-bottom: 4px;
@@ -812,17 +816,19 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
-
+  outline: none;
   margin-bottom: 10px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus,
-.modal-input:hover {
+.modal-input:focus {
   border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
-.modal-input:focus,
-.modal-input:hover + .modal-icon {
+.modal-input:focus + .modal-icon {
   fill: var(--accent-color);
 }
 .modal-send {
