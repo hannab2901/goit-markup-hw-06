@@ -732,13 +732,27 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:focus svg,
+.modal-btn:hover svg {
+  fill: var(--accent-color);
 }
 
 .modal-img {
   width: 11px;
   height: 11px;
   fill: #000000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -800,6 +814,12 @@ body {
   padding-left: 42px;
 
   margin-bottom: 10px;
+}
+.modal-input:focus {
+  border: var(--accent-color);
+}
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
 .modal-send {
   text-align: center;
