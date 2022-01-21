@@ -276,22 +276,34 @@
                 <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                <div>
                 <div class="modal-nav">
-                   <label for="name">Имя</label>
+                   <label for="name" class="modal-label">Имя</label>
                    <input type="text" name="name" id="name" class="modal-input">  
-                   <svg class="modal-icon"><use href="img/symbol-defs.svg#icon-person-black-18dp-1"></use></svg>
+                   <svg class="modal-icon" width="12" height="12"><use href="img/symbol-defs.svg#icon-person-black-18dp-1"></use>
+                </svg>
                 </div>
                 <div class="modal-nav">
-                    <label for="tel">Телефон</label>
+                    <label for="tel" class="modal-label">Телефон </label>
                     <input type="tel" name="tel" id="tel" class="modal-input">
+                    <svg class="modal-icon" width="13" height="13"><use href="img/symbol-defs.svg#icon-phone-black-18dp-1"></use></svg>
                 </div>
                 <div class="modal-nav">
-                    <label for="mail">Почта</label>
+                    <label for="mail" class="modal-label">Почта</label>
                     <input type="email" name="mail" id="mail" class="modal-input">
+                    <svg class="modal-icon" width="15" height="12"><use href="img/symbol-defs.svg#icon-email-black-18dp-1"></use> </svg>
                  </div>
                 <div class="modal-nav">
-                    <label for="comment">Комментарий</label>
+                    <label for="comment" class="modal-label">Комментарий</label>
                     <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-input"></textarea>
                 </div>
+                <div>
+
+                </div>
+               <div class="modal-send">
+                   <input type="checkbox" name="police" id="police">
+                   <label class="send-label" for="police">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
+                <div class="modal-div"> <button class="button" >Отправить</button></div>
+               
             </div>
         </div>
     </div>
