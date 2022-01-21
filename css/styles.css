@@ -755,6 +755,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+
+  margin-bottom: 12px;
 }
 .modal-nav textarea {
   resize: none;
@@ -776,11 +778,13 @@ body {
 }
 
 .modal-icon {
-  height: 12px;
-  width: 12px;
   position: absolute;
-
+  top: 32px;
   left: 15px;
+  fill: #000000;
+}
+.modal-label {
+  padding-bottom: 4px;
 }
 .modal-nav {
   display: flex;
@@ -793,4 +797,30 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
+
+  margin-bottom: 10px;
+}
+.modal-send {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.send-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.send-label a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.modal-div {
+  text-align: center;
 }
